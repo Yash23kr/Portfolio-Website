@@ -1,0 +1,814 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-family: 'Poppins';
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.174);
+}
+
+
+.card {
+  width: 350px;
+  min-width: 200px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: gainsboro;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 10px;
+  align-items: center;
+}
+
+.card h4 {
+  top: 50%;
+  vertical-align: middle;
+  margin-left: 10px;
+  color: gainsboro;
+}
+
+.card img {
+  padding: 10px;
+  float: left;
+  filter: invert(100%);
+}
+
+.card-container {
+  margin: 0% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.topnav {
+  background-color: rgb(26, 26, 26);
+  z-index: 2;
+  position: sticky;
+  top: 0px;
+  overflow: hidden;
+  padding: auto;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #c4c4c4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.65em;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.topnav a:hover {
+  color: beige;
+  border-bottom: none;
+}
+
+.topnav a.active {
+  color: rgb(245, 160, 91);
+  border-bottom: 2px solid rgb(245, 160, 91);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    position: absolute;
+    left: 88%;
+    top: 0;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .topnav.responsive {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    left: 88%;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    width: 100%;
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.active,
+.bun:hover {
+  border-bottom: 2px solid aliceblue;
+}
+
+.ptext2 {
+  color: gainsboro;
+  font-size: 1.5em;
+  font-family: "Poppins";
+  padding: 2% 0% 2% 4%;
+}
+
+@media screen and (max-width: 600px) {
+  .ptext2 {
+    font-size: 1em;
+  }
+}
+
+.rev.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.proj {
+  background-color: rgba(125, 125, 125, 0.2);
+  color: gainsboro;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.proj2 {
+  display: flex;
+}
+
+.proj img {
+  width: 100%;
+}
+
+.proj a {
+  text-decoration: none;
+  color: gainsboro;
+}
+
+.proj:hover {
+  background-color: rgba(255, 255, 255, 0.174);
+  transform: translateY(-2px);
+}
+
+.proj-images {
+  margin-left: 10%;
+}
+
+.ptext {
+  padding: 16px 5px;
+  font-size: 1.2em;
+}
+
+.topics {
+  font-size: 6.4em;
+  text-align: center;
+}
+
+.card-title {
+  color: black;
+}
+
+#cc,
+#kdag {
+  border: 2px solid white;
+  border-bottom: 0px;
+  border-right: 0px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+}
+
+#swg,
+#kgts {
+  border: 2px solid white;
+  border-top: 0px;
+  border-left: 0px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+
+}
+
+#swg {
+  background-color: rgba(125, 125, 125, 0.2);
+  color: gainsboro;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#cc {
+  background-color: rgba(125, 125, 125, 0.2);
+  color: gainsboro;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box {
+  margin-left: 5%;
+  font-size: 1.3em;
+  font-family: 'Poppins';
+}
+
+.box2 {
+  margin-left: 10%;
+  font-size: 1.3em;
+  font-family: 'Poppins';
+}
+
+@media (max-width:900px) {
+  .topnav a {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width:750) {
+  .topnav a {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 800px) {
+  .box {
+    font-size: 1.15em;
+    font-family: 'Poppins';
+  }
+
+  .box2 {
+    font-size: 1.15em;
+    font-family: 'Poppins';
+  }
+}
+
+@media (max-width: 500px) {
+  .box {
+    padding-left: 5%;
+    font-size: 1em;
+    font-family: 'Poppins';
+  }
+
+  .box2 {
+    margin-left: 5%;
+    font-size: 1em;
+    font-family: 'Poppins';
+  }
+}
+
+#kgts {
+  background-color: rgba(125, 125, 125, 0.2);
+  color: gainsboro;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#kdag {
+  background-color: rgba(125, 125, 125, 0.2);
+  color: gainsboro;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.clubh {
+  color: rgb(245, 160, 91);
+  font-size: 1.8em;
+}
+
+.aboutcol {
+  color: gainsboro;
+  font-size: 1.5em;
+  font-family: 'Poppins';
+  text-transform: initial;
+}
+
+@media (max-width: 800px) {
+  .aboutcol {
+    font-size: 1.2em;
+  }
+}
+
+#abouttext {
+  color: gainsboro;
+}
+
+#about {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#myBtn {
+  border: none;
+  color: rgb(245, 160, 91);
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  font-size: 0.9em;
+}
+
+#abouttext {
+  font-size: 1.7em;
+  margin-left: 18%;
+  font-family: 'Poppins';
+}
+
+@media screen and (max-width: 650px) {
+  #abouttext {
+    font-size: 1.4em;
+  }
+}
+
+#more {
+  display: none;
+  font-family: 'Poppins';
+  text-transform: capitalize;
+}
+
+#About {
+  position: relative;
+  animation-name: example2;
+  animation-duration: 1s;
+}
+
+@keyframes example1 {
+  0% {
+    left: -50px;
+    top: 0px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes example3 {
+  0% {
+    left: 55%;
+    top: 0px;
+  }
+
+  100% {
+    left: 50.3%;
+    top: 0px;
+  }
+}
+
+.small-heading {
+  color: rgb(245, 160, 91);
+  padding-left: 4%;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.timeline h2{
+  margin-top: 5px;
+}
+/* Container around content */
+.container {
+  padding: 10px 20px;
+  position: relative;
+  margin-left: 0px;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -12px;
+  background-color: white;
+  border: 4px solid rgb(245, 160, 91);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: -100;
+  position: relative;
+  animation-name: example1;
+  animation-duration: 1s;
+}
+
+@keyframes example5 {
+  0% {
+    left: 50px;
+    top: 0px
+  }
+
+  100% {
+    left: 0px;
+    top: 0px
+  }
+}
+
+/* Place the container to the right */
+.right {
+  left: 50.3%;
+  position: relative;
+  animation-name: example3;
+  animation-duration: 1s;
+}
+
+@media (max-width: 600px) {
+
+  .right,
+  .left {
+    animation-name: example5;
+  }
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: rgb(217, 217, 217);
+  content: black;
+  position: relative;
+  border-radius: 6px;
+}
+
+.content:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+@media screen and (max-width: 600px) {
+
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 15px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+#Contact {
+  position: relative;
+  animation-name: example1;
+  animation-duration: 1s;
+}
+
+@keyframes example1 {
+  0% {
+    left: -50px;
+    top: 0px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+#Artwork {
+  position: relative;
+  animation-name: example4;
+  animation-duration: 1s;
+}
+
+#Projects {
+  position: relative;
+  animation-name: example4;
+  animation-duration: 1s;
+}
+
+@keyframes example4 {
+  0% {
+    left: 0px;
+    top: 40px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+#Artwork .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  width: 88%;
+  margin: 20px auto;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  #Artwork .row {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  #Artwork .row {
+    width: 90%;
+  }
+}
+
+
+#Artwork .row div {
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  padding: 10px auto;
+}
+
+#Artwork .row div img {
+  max-width: 90%;
+  bottom: 0;
+  margin: 15px auto;
+  padding: 10px;
+  transition: 0.4s;
+}
+
+#Artwork .row div img:hover {
+  transform: scale(1.1);
+}
+
+.port-images {
+  width: 25%;
+}
+
+.car-image {
+  width: 50%;
+}
+
+.canvas-images {
+  width: 50%;
+}
+
+@media (max-width:960px) {
+  .port-images {
+    width: 50%;
+  }
+
+  .car-image {
+    width: 100%;
+  }
+
+  .canvas-images {
+    width: 50%;
+  }
+}
+
+@media (max-width:512px) {
+  .row {
+    width: 98%;
+  }
+
+  .port-images {
+    width: 50%;
+  }
+
+  .car-image {
+    width: 100%;
+  }
+
+  .canvas-images {
+    width: 100%;
+  }
+}
+
+@media (max-width:350px) {
+  #Artwork .row {
+    width: 90%;
+  }
+
+  .port-images {
+    width: 100%;
+  }
+
+  .car-image {
+    width: 100%;
+  }
+
+  .canvas-images {
+    width: 100%;
+  }
+}
+
+.cont-section {
+  width: 80%;
+  margin: 25px auto 0px auto;
+  padding: 0px 50px 10px 50px;
+}
+
+.cont-section h2 {
+  color: beige;
+}
+
+.cont-section h4 {
+  color: azure;
+  align-items: center;
+}
+
+.cont-section h4 a {
+  text-decoration: none;
+  color: azure;
+  transition: 0.3s;
+  padding-bottom: 0px;
+}
+
+@media (max-width: 800px) {
+  .cont-section {
+    width: 96%;
+  }
+
+  .cont-section h2 {
+    color: beige;
+    font-size: 20px;
+  }
+
+  .cont-section h4 {
+    color: azure;
+    font-size: 16px;
+  }
+}
+
+.fa {
+  font-size: 24px;
+  color: azure;
+  transition: 0.4s;
+  padding: 0px 10px 20px 0px;
+}
+
+.fa:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  background-color: rgb(26, 26, 26);
+  z-index: 2;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: right;
+  font-size: 14px;
+  color: rgb(245, 160, 91);
+  text-align: right;
+  padding: 5px 20px;
+}
+
+@media (max-width:500px) {
+  footer {
+    background-color: rgb(26, 26, 26);
+    z-index: 2;
+    position: fixed;
+    text-align: center;
+    padding: 5px;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px 30px 50px 30px;
+}
+
+.intropfp {
+  width: 30%;
+  text-align: center;
+
+}
+
+.intropfp img {
+  margin-top: 20px;
+  max-width: 210px;
+  height: 210px;
+  border-radius: 1000px;
+  padding: 2px;
+  border: 2px inset rgb(237, 252, 237);
+  box-shadow: 0px 0px 4px 0px rgb(198, 193, 188);
+  transition: 0.3s;
+}
+
+.intropfp img:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 0px 16px 0px rgb(198, 193, 188);
+}
+
+.introtext {
+  position: relative;
+  font-size: 72px;
+  display: flex;
+  align-items: flex-end;
+  width: 68%;
+  color: rgb(198, 193, 188);
+  padding: 20px;
+}
+
+@media (max-width:1120px) {
+  .introtext {
+    line-height: 1;
+  }
+}
+
+@media (max-width: 780px) {
+  .intropfp img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .introtext {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 650px) {
+  .intropfp {
+    width: 100%;
+  }
+
+  #abouttext {
+    margin: 2%;
+  }
+
+  .introtext {
+    width: 100%;
+    font-size: 42px;
+    padding: 20px 0px;
+  }
+}

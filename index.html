@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="bun active" onclick="openCity('About')">About</a>
+    <a href="#news" class="bun" onclick="openCity('Involvements')">Involvements</a>
+    <a href="#contact" class="bun" onclick="openCity('Projects')">Projects</a>
+    <a href="#artwork" class="bun" onclick="openCity('Artwork')">Artwork</a>
+    <a href="#about" class="bun" onclick="openCity('Contact')">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="city" id="About">
+    <section id="about" class="reveal">
+      <div class="intro">
+        <div class="intropfp">
+          <img src="pfp.jpg">
+        </div>
+        <div class="introtext">
+          Yash Kumar<br>Sophomore IIT KGP</div>
+      </div>
+      <h3 id="abouttext">
+        Hello! I am a second year undergraduate student studying in the Department of <span
+          style="color:rgb(245, 160, 91);">Computer Science and Engineering</span> of Indian Institute of Technology,
+        Kharagpur.
+
+        <br><span id="dots"></span>
+        <br><button onclick="myFunction1()" id="myBtn"><u>READ MORE &rarr;</u></button>
+      </h3>
+
+
+      <div class="row aboutcol" id="more">
+        <div class="col-lg-3 col-xs-1"></div>
+        <div class="col-lg-4 col-xs-5"><span style="font-size: 1.8em;color:rgb(245, 160, 91);"><b>What I
+              do?</b></span>&nbsp;I love exploring new fields and for the same fact, i have been trying my hands on
+          competitive programming, web development and machine learning as well.
+
+        </div>
+        <div class="col-lg-4 col-xs-5">
+          <p style="font-size:0.25em;"><br></p>When I am not learning something new in the area of programming or
+          development, I am probably watching formula 1 or playing some or the other sport.
+        </div>
+      </div>
+
+    </section>
+    <br>
+    <h3 class="small-heading">My Interests:</h3>
+    <div class="card-container">
+
+      <div class="card">
+        <img class="card-img-top" src="ml.png" style="width:60px;">
+        <div class="card-body">
+          <h4 class="card-title">Machine Learning</h4>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="cp.png" style="width:60px;">
+        <div class="card-body">
+          <h4 class="card-title">Competitve Programming</h4>
+
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img class="card-img-top" src="webd.png" style="width:60px;">
+        <div class="card-body">
+          <h4 class="card-title">Web Development</h4>
+
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="painting.png" style="width:60px;">
+        <div class="card-body">
+          <h4 class="card-title">Painting</h4>
+
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="basketball.png" style="width:60px;">
+        <div class="card-body">
+          <h4 class="card-title">Basketball</h4>
+
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="runner.png" style="width:60px;">
+        <div class="card-body">
+          <h4 class="card-title">Athletics</h4>
+
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </div>
+  <div id="Projects" class="city" style="display:none">
+    <br>
+
+    <div class="row">
+      <h2 style="color:rgb(245, 160, 91);padding-left: 4%;">Presentations on t-SNE and UMAP [ML]</h2>
+      <div class="col-lg-7 col-12">
+        <p class="ptext2">As a member of IIT Kharagpur Data Analytics Group, I wrote two articles explaining the
+          mathematics, similarities and differences of two popular and recent dimensionality reduction techniques in
+          Machine Learning,
+          <span style="color:rgb(245, 160, 91);">t-Distributed Stochastic Neighbour Embedding</span> and <span
+            style="color:rgb(245, 160, 91);">Uniform Manifold Approximation and Projection</span>.
+        </p>
+      </div>
+      <div class=" col-lg-4 col-md-6 proj2">
+        <div class="proj">
+          <a href="https://drive.google.com/file/d/18PlIJiAXUg8Q35ju8GGuxzi_DT1uJSj1/view?usp=sharing">
+            <img src="https://miro.medium.com/max/959/1*kK4aMPHQ89ssFEus6RT4Yw.jpeg" class="img-responsive">
+            <div class="ptext">t-SNE White Paper</div>
+          </a>
+        </div>
+        <div class="proj">
+          <a href="https://drive.google.com/file/d/1NU94eX3RGzONur6nBTpKf_PBrjaEl-_t/view?usp=sharing">
+            <img src="https://miro.medium.com/max/959/1*kK4aMPHQ89ssFEus6RT4Yw.jpeg" class="img-responsive">
+            <div class="ptext">UMAP White Paper</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr style="border-width: 2px;width:50%;text-align: center;color: rgb(245, 160, 91);"> 
+    <div class="row">
+      <h2 style="color:rgb(245, 160, 91);padding-left: 4%;">Student Welfare Group Website</h2>
+      <div class="col-lg-7 col-12">
+        <p class="ptext2">•	Developed a <span style="color:rgb(245, 160, 91);">React-based website</span>, as a welfare initiative for 10000+ students of IIT Kharagpur.
+          <br>•	Built 4 pages from scratch and reused them for similar pages. Used ReactJS’s useState hook to develop a search bar to allow users to search for a blog amongst our 150+ blogs on internship and placements.
+          <br>•	Led a team of 18 Associate Members working on the data entry and UI/UX of the website.
+        </p>
+      </div>
+      <div class=" col-lg-4 col-md-6 proj2">
+        <div class="proj">
+          <a href="https://student-welfare-group.com/" target="_blank">
+            <img src="Website_ss.png" class="img-responsive">
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr style="border-width: 2px;width:50%;text-align: center;color: rgb(245, 160, 91);">
+    <br>
+    <br>
+  </div>
+  <div id="Involvements" class="city" style="display:none;">
+    <br>
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h3>October 2022-Present</h3>
+          <h2>Student Member | Student Welfare Group</h2>
+          <p>Led the Tech Team to successfully develop and launch SWG’s own website.<br>
+            Coordinated with a team of 11 heads and successfully executed the Student Mentorship Program, allotting 600+ mentors to over 1900 first-year undergraduate students.
+            </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h3>February 2022-Present</h3>
+          <h2>Member | CodeClub</h2>
+          <p>Worked as a problem setter and tester of CodeNite (a bimonthly competitive programming contest organised by CodeClub) which attracted more than 325 users and over 1300 submissions on Codechef. </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h3>January 2023</h3>
+          <h2>General Championship Maths Olympiad</h2>
+          <p>Represented 650+ boarders of RK Hall in the Inter-Hall Maths Olympiad event of the General Championship 2022-23.</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h3>February-September 2022</h3>
+          <h2>Associate Member | Kharagpur Data Analytics Group</h2>
+          <p>Completed relevant courses on Machine Learning and presented a presentation explaining the maths involved in two famous dimensionality reductions techniques (t-SNE and UMAP) in Machine Learning. </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h3>February-September 2022</h3>
+          <h2>Associate Member | Student Welfare Group</h2>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim
+            fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+  </div>
+  <div id="Artwork" class="city" style="display:none;">
+    <br>
+    <div class="row">
+      <div class="canvas-images">
+        <img src="canvas 1(2).png">
+      </div>
+      <div class="canvas-images">
+        <img src="canvas 2.png">
+      </div>
+      <div class="port-images">
+        <img src="patekar2.png">
+      </div>
+      <div class="port-images">
+        <image src="bose2.png">
+      </div>
+      <div class="car-image">
+        <img src="avanti2.png">
+      </div>
+    </div>
+
+  </div>
+  <div id="Contact" class="city" style="display:none">
+    <br><br>
+    <div class="contact-details">
+      <div class="cont-section">
+        <h2>Email Id:</h2>
+        <h4><a href="mailto:someone@example.com">kyash00001@gmail.com</a></h4>
+      </div>
+      <div class="cont-section">
+        <h2>Phone:</h2>
+        <h4>+91 72579 09987</h4>
+      </div>
+      <div class="cont-section">
+        <h2>Social Media:</h2>
+        <h4><a href="https://www.facebook.com/profile.php?id=100075211103014" class="facebook"><i
+              class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/yashkr_23/" class="instagram"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/yash-kumar-53280922b/" class="linkedin"><i
+              class="fa fa-linkedin"></i></a>
+        </h4>
+      </div>
+      <div class="cont-section">
+        <h2>Address:</h2>
+        <h4>Radhakrishnan Hall of Residence, Indian Institute of Technology, Kharagpur, India</h4>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer">
+      <span style="color:white;">Designed by</span> Yash
+    </div>
+  </footer>
+  <script>
+    function openCity(cityName) {
+
+      var i;
+      var x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(cityName).style.display = "block";
+      var y = document.getElementById("myTopnav");
+      if (y.className === "topnav") {
+        y.className += " responsive";
+      } else {
+        y.className = "topnav";
+      }
+    }
+  </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <script>
+
+    var header = document.getElementById("myTopnav");
+    var btns = header.getElementsByClassName("bun");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    toggleButton.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active')
+    })
+    function myFunction1() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "<u>READ MORE &rarr;</u>";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "<u>READ LESS &larr;</u>";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
+</body>
+
+</html>

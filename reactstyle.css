@@ -1,0 +1,314 @@
+body{
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+html{
+  scroll-behavior: smooth;
+}
+.intro{
+  color: #E2DCC8;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0),#3b3b3b );
+  z-index:1;
+}
+.row{
+  color: black;
+}
+.tab{
+    padding:0px;
+    border-radius: 0px;
+    height: 64px;
+    border-width: 0px 0px;
+    border-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0);
+    color: gainsboro;
+    text-align: center;
+    font-size:1.3em;
+    transition: 0.2s;
+}
+button.tab{
+  width: 100%;
+}
+.tab:hover{
+  color:rgb(245, 160, 91);
+  border-bottom: 1px solid rgb(245, 160, 91);
+}
+#abouttext{
+    font-size: 2em;
+    margin-left: 18%;
+    font-family: 'Poppins';
+}
+
+#imgs{
+    text-align: center;
+  }
+  .topics{
+    font-size: 6.4em;
+    text-align: center;
+}
+#involve{
+  font-size: 5em;
+}
+#canvas1{
+  margin-top: 4%;
+    border-top: 3px solid rgb(245, 160, 91);;
+    border-left: 3px solid rgb(245, 160, 91);
+  }
+  #canvas2{
+    border-bottom: 3px solid rgb(245, 160, 91);;
+    border-right: 3px solid rgb(245, 160, 91);;
+  }
+  #bose{
+    
+    border-top: 3px solid rgb(245, 160, 91);;
+    border-left: 3px solid rgb(245, 160, 91);;
+  }
+  #patekar{
+    border-bottom: 3px solid rgb(245, 160, 91);;
+    border-right: 3px solid rgb(245, 160, 91);f;
+  }
+  #avanti{
+    margin-top: 5%;
+    border: 3px solid rgb(245, 160, 91);
+    padding: 2px;
+  }
+  #cc,#kdag{
+    border: 2px solid white;
+    border-bottom: 0px;
+    border-right:0px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+  }
+  #swg,#kgts{
+    border: 2px solid white;
+    border-top:0px;
+    border-left:0px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+
+  }
+  #swg{
+    background-color:rgba(125, 125, 125, 0.2);
+  color: gainsboro;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #cc{
+    background-color:rgba(125, 125, 125, 0.2);
+  color: gainsboro;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .box{
+    margin-left: 5%;
+    font-size: 1.5em;
+    font-family: 'Poppins';
+}
+#kgts{
+  background-color:rgba(125, 125, 125, 0.2);
+  color: gainsboro;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#kdag{
+  background-color:rgba(125, 125, 125, 0.2);
+  color: gainsboro;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.clubh{
+  color:rgb(245, 160, 91);
+  font-size: 2.0em;
+}
+.box2
+{
+    text-align: right;
+    font-size: 1.5em;
+    font-family: 'Poppins';
+}
+.aboutcol{
+  color: gainsboro;
+  font-size: 1.5em;
+  font-family: 'Poppins';
+}
+#about{
+  background-color: rgba(0, 0, 0, 0);
+}
+#myBtn{
+    border: none;
+    color:rgb(245, 160, 91);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    font-size: 0.9em;
+  }
+
+footer{
+    font-size: 18px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0),#353535 );
+    color: gainsboro;
+    padding:1%;
+    font-family: 'Poppins';
+  }
+  footer .row{
+    color: gainsboro;
+  }
+  #wpbutton{
+    color:black;
+    border-radius: 50px;
+    font-family: "Noto Sans","Helvetica Neue","Helvetica","Arial","Liberation Sans","Roboto","Noto",sans-serif;
+    font-size: 0.95em;
+    padding: 4px;
+  }
+  .ptext{
+    font-size: 1.5em;
+    font-family: "Poppins";
+    padding: 2% 10%;
+  }
+  .ptext2{
+    color: gainsboro;
+    font-size: 1.5em;
+    font-family: "Poppins";
+    padding: 2% 0% 2% 10%;
+  }
+  #more{
+    display: none;
+    font-family: 'Poppins';
+  }
+  .icon-bar {
+    z-index: 10;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: rgb(245, 160, 91);
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    transform: scale(1.35);
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .facebook {
+    color:rgb(199, 171, 149);
+  }
+  
+  .instagram {
+  font-size: 200px; /* change this to change the size*/
+ 
+  }
+  
+  .linkedin {
+    color: white;
+  }
+  
+  
+  .content {
+    margin-left: 75px;
+    font-size: 30px;
+  }
+  .name{
+    color: gainsboro;
+    font-size:10vw;
+    margin-top: 80px;
+  }
+  .nameintro {
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    0%  { left:100px; top:0px;}
+    100% { left:0px; top:0px;}
+  }
+  .sophie {
+    color: gainsboro;
+    position: relative;
+    animation-name: example2;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example2 {
+    0%  { left:-100px; top:0px;}
+    100% { left:0px; top:0px;}
+  }
+  .splide__slide{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0) ;
+
+  }
+
+  .splide__slide__container{
+    width: 1600px;
+    text-align: center;
+  }
+
+  .slide__content{
+  margin: 0 0;
+  font-size: 1.3rem;
+  }
+
+  .slide-img__wrapper{
+    display: flex;
+    align-items: center;
+
+  }
+
+  .slide-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .slide-img__caption{
+    margin-left: 1rem;
+  }
+
+  .slide-img__caption span{
+    color: #2E86C1 ;
+    font-weight: 500;
+  }
+  .reveal{
+    position: relative;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .rev2{
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+.proj{
+  background-color: rgba(0, 0, 0, 0);
+  color: gainsboro;
+    box-shadow: 0 5px 10px 0 rgba(245, 160, 91, 0.35);, 0 6px 20px 0 rgba(231, 231, 231, 0.19);
+    text-align: center;
+    margin: 10px;
+}
+.proj a{
+  text-decoration: none;
+  color: gainsboro;
+}
+.proj:hover{
+  transform: translateY(-2px);
+}
+.img-thumbnail{
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0);
+}
